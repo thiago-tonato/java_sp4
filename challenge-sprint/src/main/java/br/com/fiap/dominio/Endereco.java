@@ -1,17 +1,15 @@
 package br.com.fiap.dominio;
 
 public class Endereco {
-
-    private String logradouro;
-    private String bairro;
-    private String complemento;
-    private String localidade;
-    private String uf;
     private String cep;
+    private String logradouro;
+    private String uf;
 
-    public Endereco() {}
+    public String getCep() {
+        return cep;
+    }
 
-    public Endereco(String cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
@@ -19,24 +17,16 @@ public class Endereco {
         return logradouro;
     }
 
-    public String getBairro() {
-        return bairro;
-    }
-
-    public String getComplemento() {
-        return complemento;
-    }
-
-    public String getLocalidade() {
-        return localidade;
+    public void setLogradouro(String logradouro) {
+        this.logradouro = logradouro;
     }
 
     public String getUf() {
         return uf;
     }
 
-    public String getCep() {
-        return cep;
+    public void setUf(String uf) {
+        this.uf = uf;
     }
-
 }
+
